@@ -1,98 +1,51 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #eef2f3, #8e9eab);
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Hero Section */
-.hero {
+header {
     text-align: center;
-    padding: 40px 20px;
-    background: #0078d7;
+    background: #333;
     color: #fff;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 70%);
+    padding: 1rem 0;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+header h1 {
+    margin: 0;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin: 10px 0;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-/* Content Section */
-.content {
-    padding: 20px;
+section {
+    margin: 20px auto;
     max-width: 800px;
-    margin: auto;
-}
-
-.card {
-    background: #fff;
-    margin-bottom: 20px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    animation: slideIn 0.8s ease-out;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
-    color: #0078d7;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #0078d7;
-    display: inline-block;
+h2 {
+    border-bottom: 2px solid #333;
     padding-bottom: 5px;
 }
 
-/* Skills List */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+a {
+    color: #007BFF;
+    text-decoration: none;
 }
 
-.skills-list li {
-    background: #0078d7;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.9rem;
+a:hover {
+    text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    font-size: 0.9rem;
-    margin-top: 20px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Animations */
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+ul li {
+    margin-bottom: 10px;
 }
